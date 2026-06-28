@@ -1,0 +1,51 @@
+{
+  "name": "carbonconsole-cli",
+  "version": "0.4.0",
+  "description": "Official command-line interface for the CarbonConsole cloud-carbon API",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "carbonconsole": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbonconsole/carbonconsole-cli.git"
+  },
+  "homepage": "https://github.com/carbonconsole/carbonconsole-cli#readme",
+  "bugs": {
+    "url": "https://github.com/carbonconsole/carbonconsole-cli/issues"
+  },
+  "keywords": [
+    "carbonconsole",
+    "cli",
+    "carbon",
+    "sustainability",
+    "cloud"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "picocolors": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "eslint": "^9.7.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

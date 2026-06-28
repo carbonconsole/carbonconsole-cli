@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+dist/
+
+# Env / secrets
+.env
+.env.local
+
+# Logs
+*.log
