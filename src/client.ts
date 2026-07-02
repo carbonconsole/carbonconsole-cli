@@ -13,7 +13,7 @@ export class ApiClient {
       headers: {
         authorization: `Bearer ${token}`,
         accept: "application/json",
-        "user-agent": "carbonconsole-cli/0.4.0",
+        "user-agent": "carbonconsole-cli/0.4.1",
       },
     });
     if (!res.ok) {

@@ -12,7 +12,7 @@ const program = new Command();
 program
   .name("carbonconsole")
   .description("Official CLI for the CarbonConsole cloud-carbon API")
-  .version("0.4.0", "-v, --version", "output the CLI version");
+  .version("0.4.1", "-v, --version", "output the CLI version");
 
 registerLogin(program);
 registerWhoami(program);
